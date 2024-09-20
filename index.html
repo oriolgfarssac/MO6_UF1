@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the number!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="c-joc">
+        <div class="c-joc__score-info">
+            
+            <h3 class="c-joc__intents" id="chances"><label>Chances : </label> 20 </h3>
+
+            <h3 class="c-joc__score" id="score"> <label>Score : </label> 0</h3>
+        </div>
+        <h2 class="c-joc__title">Find the number between 1 - 20 </h2>
+        <div class="c-joc__content">
+            <div class="c-joc__content-info">
+                <h3 class="c-joc__content-state" id="state"> The number is... </h3>
+            </div>
+            <div class="c-joc__content-submit">
+                <input type="number" class="c-joc__submit-input" id="chance" placeholder="Escull un numero del 1-20">
+                <button class="c-joc__submit-button" onclick="playGame()">▶️</button>
+                <button class="c-joc__restart" onclick="reset()">🔃</button>
+            </div>
+        </div>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
