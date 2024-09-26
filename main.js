@@ -8,6 +8,7 @@ const playGame = () =>{
     let chance = document.getElementById("state");
     let chanceS = document.getElementById("chances");
     let score = document.getElementById("score");
+    let fondo = document.getElementById("c-joc");
 
     console.log(randomNumber);
 
@@ -19,6 +20,7 @@ const playGame = () =>{
             chances -= 1;
             chance.innerHTML = "The number is CORRECT! You've won 5 points!"
             randomNumber = Math.floor(Math.random() * 20) + 1;
+            fondo.style= "background-color: green;";
 
         }
         
@@ -40,6 +42,8 @@ const playGame = () =>{
     else {
 
         chance.innerHTML = "You've runed out of chances, but you've gained " + points + " points!";
+        fondo.style= "background-color: red;";
+
 
     }
 
